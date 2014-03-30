@@ -1,0 +1,6 @@
+<!ELEMENT biblioteki (biblioteka*)>
+<!ELEMENT biblioteka (nazwa_bib, adres_bib)>
+<!ATTLIST biblioteka
+kod ID #REQUIRED>
+<!ELEMENT nazwa_bib (#PCDATA)>
+<!ELEMENT adres_bib (#PCDATA)>

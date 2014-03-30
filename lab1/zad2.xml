@@ -1,0 +1,27 @@
+<hardware>
+	<AMD RADEON="R9">
+		<GPU>Hawaii</GPU>
+		<Technology>28 nm</Technology>
+		<Relase_date>2013</Relase_date>
+		<Bus_Interface>PCI-E 3.0 x16</Bus_Interface>
+		<Shaders>2560</Shaders>
+		<DirectX_Support>11.2</DirectX_Support>
+		<Memory_type>GDDR5</Memory_type>
+		<Bus_width>512 Bit</Bus_width>
+		<Memory_size>4096 MB</Memory_size>
+		<GPU_clock>947 MHz</GPU_clock>
+		<Memory_Clock>1250 MHz</Memory_Clock>
+	</AMD>
+	
+	<INTEL GMA="3600">
+		<GPU>Rogue</GPU>
+		<Technology>32 nm</Technology>
+		<Relase_date>2012</Relase_date>
+		<Bus_Interface>PCI</Bus_Interface>
+		<Shaders>4</Shaders>
+		<DirectX_Support>11.0</DirectX_Support>
+		<Memory_type>DDR3</Memory_type>
+		<Memory_size>8 MB</Memory_size>
+	</INTEL>
+	
+</hardware>

@@ -1,0 +1,51 @@
+body {
+	background: lightblue;
+}
+
+h2 {
+text-align: center;
+}
+#gora {
+display: table;
+margin: auto;
+width: 1000px;
+height: 400px;
+clear: both;
+}
+
+#wzor {
+display: table;
+margin: auto;
+padding-left: 20px;
+padding-right: 20px;
+border: 1px dotted;
+width: 950px;
+height: 400px;
+background: white;
+clear: both;
+}
+
+#obrazek {
+display: table;
+margin: auto;
+padding-left: 50px;
+padding-right: 20px;
+border: 1px dotted;
+width: 400px;
+height: 500px;
+background: white;
+float:right;
+}
+
+#zadanie {
+display: table;
+margin: auto;
+padding-left: 20px;
+padding-right: 50px;
+border: 1px dotted;
+width: 400px;
+height: 500px;
+background: white;
+float:left;
+
+}

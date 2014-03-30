@@ -1,0 +1,38 @@
+<!DOCTYPE pracownicy [
+<!ELEMENT pracownicy (dzial-spozywczy, dzial-chemiczny)>
+<!ELEMENT dzial-spozywczy (pracownik*)>
+<!ELEMENT dzial-chemiczny (pracownik*)>
+<!ELEMENT pracownik (nazwisko, imie, data-zatr)>
+<!ATTLIST pracownik
+plec (m|k|bd) "bd"
+pesel NMTOKEN #REQUIRED
+status CDATA #IMPLIED>
+<!ELEMENT nazwisko (#PCDATA)>
+<!ELEMENT imie (#PCDATA)>
+<!ELEMENT data-zatr (#PCDATA)>
+]>
+
+
+
+
+<pracownicy>
+<dzial-spozywczy>
+<pracownik plec='m' pesel='111111111111' status='len' >
+<nazwisko> Nowak </nazwisko>
+<imie> Michal</imie>
+<data-zatr> 10-01-2009</data-zatr>
+</pracownik>
+<pracownik plec="k" pesel='111111111111' status='obibok'>
+<nazwisko> Lipiec </nazwisko>
+<imie> Anna </imie>
+<data-zatr> 04-12-2007 </data-zatr>
+</pracownik>
+</dzial-spozywczy>
+<dzial-chemiczny>
+<pracownik plec="bd" pesel='111111111111'>
+<nazwisko> Malinowska </nazwisko>
+<imie> Marta </imie>
+<data-zatr> 23-06-2005 </data-zatr>
+</pracownik>
+</dzial-chemiczny>
+</pracownicy>

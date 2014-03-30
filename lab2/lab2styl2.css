@@ -1,0 +1,69 @@
+listaStudentow {
+
+
+	border: dotted; 
+	margin: auto auto auto auto;
+	width: 520px;
+	height: 360px;
+	background: lightgreen;
+}
+grupa{
+margin: auto;
+}
+
+
+grupa[nr="1"]
+{
+border: 1px solid black;
+        display: table;
+        background: lightblue;
+        float:left;
+        margin: 5px 5px 12px 15px; 
+}
+
+grupa[nr="2"]
+{
+border: 1px solid black;
+        display: table;
+        background: lightblue;
+        margin: 5px 5px 5px 0px;
+        float: left
+}
+
+grupa[nr="3"]
+{
+border: 1px solid black;
+        display: table;
+        background: lightblue;
+        margin: 5px 5px 5px 0px;
+        float: left ;
+}
+
+student {
+border: 2px solid black;
+display: block;
+margin: 5px 5px 5px 5px;
+        background: grey;
+}
+
+nazwisko, imie{
+font-size:14px;
+	border: none; 
+
+	padding:1px;
+	margin: 3px, 3px 3px, 3px ;
+}
+
+nazwisko{
+color:blue;
+}
+
+nrIndeksu:before { content: "indeks: "; } 
+
+nrIndeksu {
+font-size:10px;
+	border: none; 
+	display:block;
+	padding:4px;
+	margin: 4px;
+}

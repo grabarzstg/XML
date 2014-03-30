@@ -1,0 +1,24 @@
+1.
+a)Jak dotąd definiowaliśmy własne przestrzenie nazw.
+b) Jakich przestrzeni użwają pliki XHTML i HTML?Podaj ich identyfikatory URI. Jaki jest ich zwyczajowy prefiks? 
+Jakiej przestrzeni nazw używa stronahttp://mfi.ug.edu.pl/?
+a)- na przyklad: xmlns:prac="http://uczelnia.bajtowa.edu.pl/xmlns/PRAC"> 
+b)-<html xmlns="http://www.w3.org/1999/xhtml">
+
+2.Jak dotąd deklarowaliśmy DTD w sposób: !DOCTYPE klient SYSTEM "coś.dtd". Co to znaczy, gdy zamienimy słowo SYSTEM na PUBLIC?
+- DTD jest wtedy dostępny zdalnie (np. poprzez WWW)
+
+3.Jakiego DTD używa strona http://mfi.ug.edu.pl/? Otwórz jej DTD i wskaż deklaracje kilku encji parametrycznych i ich odwołań.
+-http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd
+
+4.
+Gdzie umiejscowiony jest arkusz stylów CSS dla strony http://mfi.ug.edu.pl/?
+-http://szpinak.ug.edu.pl/MPA/css/styleMPA.css?m=170413b
+-http://www.mfi.ug.edu.pl/css/header/header.pl.css
+
+Jaki kolor będzie miało tło w środku znacznika <div id="quick_access">...</div> na tej stronie? 
+- #quick_access { background:url('../img/szybki.png') no-repeat top center; }
+
+Jaki kolor ramki u góry i dołu będzie mial obrazek umieszczony za pomocą kodu <img src="jakiś link" alt="jakiś tekst" class="b"/>? 
+- bez ramki(?)
+- .menu li.active.b span.li-text , #menu li.active.b span.li-text { display:block; font-weight:bold; 	border-width: 0; }

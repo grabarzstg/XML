@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <?xml-stylesheet type="text/css" href="lab2styl3.css" ?>
+    <cytaty>
+           
+                    <cytat>Komputer ma nad mózgiem tę przewagę, że się go używa
+                            <haczyk>
+                            <cos>
+                                            <autor>Gabriel Laub</autor>
+                                    </cos>
+                            </haczyk>
+                    </cytat>
+                    <czerw  m="reszta">
+                    <cytat m="reszta">Piwo jest dowodem na to, że Bóg nas kocha i chce, żebyśmy byli szczęśliwi.
+                           
+                                   
+                                            <autor>Benjamin Franklin</autor>
+                                   
+                           
+                    </cytat>
+                    </czerw>
+                    <cytat >Uniwersytety są skarbnicami wiedzy: studenci przychodzą ze szkół przekonani, że wiedzą już prawie wszystko; po latach odchodzą pewni, że nie wiedzą praktycznie niczego. Gdzie się podziewa ta wiedza? Zostaje na uniwersytecie, gdzie jest starannie suszona i składana w magazynach.
+                            <cos>
+                                    <cos x="trzy">
+                                            <autor x="trzy">Terry Pratchett</autor>
+                                    </cos>
+                            </cos>
+                    </cytat>
+                   
+           
+    </cytaty>
+

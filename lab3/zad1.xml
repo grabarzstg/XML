@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE uczelnia SYSTEM "lab3dtd2.dtd">
+
+<uczelnia>
+	<nazwa>UG</nazwa>
+	<rektor>	
+		<imie>Jan</imie>
+		<nazwisko>Kowalski</nazwisko>
+		<tytul>Rektor</tytul>
+	</rektor>
+	<prorektor>
+		<imie>Piotr</imie>
+		<nazwisko>Niewiadomski</nazwisko>
+		<tytul>Prorektor</tytul>
+	</prorektor>
+	<prorektor>
+		<imie>Paweł</imie>
+		<nazwisko>Malinowski</nazwisko>
+		<tytul>Prorektor drugi</tytul>
+	</prorektor>
+	<wydzial>
+		<nazwa>MFI</nazwa>
+		<dziekan>
+			<imie>Adam</imie>
+			<nazwisko>Nowak</nazwisko>
+			<tytul>Dziekan</tytul>
+		</dziekan>
+		<prodziekan>
+			<imie>Jedrzej</imie>
+			<nazwisko>Warzocha</nazwisko>
+			<tytul>Pr0Dziekan</tytul>
+			</prodziekan>
+		<instytut>
+			<nazwa>Informatyki</nazwa>
+			<szef>
+				<imie>Marcin</imie>
+				<nazwisko>Wasilewski</nazwisko>
+				<tytul>Szef</tytul>
+			</szef>
+		</instytut>
+		<kierunek>
+			<nazwa>Kierunek</nazwa>
+			<kurs>
+				<nazwa>Kurs</nazwa>
+				<opis>Opis kursu</opis>
+				<forma>Forma kursu</forma>
+			</kurs>
+		</kierunek>
+	</wydzial>
+	
+	<wydzial>
+		<nazwa>Prawa</nazwa>
+		<dziekan>
+			<imie>Marek</imie>
+			<nazwisko>Kowal</nazwisko>
+			<tytul>Dziekannator</tytul>
+		</dziekan>
+				<prodziekan>
+			<imie>Jedrzej</imie>
+			<nazwisko>Warzocha</nazwisko>
+			<tytul>Pr0Dziekan</tytul>
+			</prodziekan>
+		<instytut>
+			<nazwa>Prawnictwa</nazwa>
+			<szef>
+				<imie>Grzegorz</imie>
+				<nazwisko>Pączek</nazwisko>
+				<tytul>Szef szefów</tytul>
+			</szef>
+		</instytut>
+		<kierunek>
+			<nazwa>Kierunek stud</nazwa>
+			<kurs>
+				<nazwa>Nazwa kursu</nazwa>
+				<opis>Opis drugiego kursu</opis>
+				<forma>Forma kolejnego kursu</forma>
+			</kurs>
+		</kierunek>
+	</wydzial>
+	<katedra>
+	<nazwa>nazwa katedry</nazwa>
+	<szef>
+		<imie>Ojciec</imie>
+		<nazwisko>Natanek</nazwisko>
+		<tytul>Proboszcz</tytul>
+	</szef>
+	</katedra>
+	<biblioteka>Biblioteka</biblioteka>
+</uczelnia>
