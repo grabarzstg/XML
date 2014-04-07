@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC
+    "-//W3C//DTD XHTML 1.1 plus MathML 2.0 plus SVG 1.1//EN"
+    "http://www.w3.org/2002/04/xhtml-math-svg/xhtml-math-svg.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pl">
+<head>
+	<title>Wzory i rysunki</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link rel="stylesheet" type="text/css" href="lab5styl1.css" />
+</head>
+<body>
+	<div id="pudelko">
+		<h1 class="naglowek">MathML</h1>
+			<div id="zadanie">
+			<p class="normalny">Oblicz pole i przekątną prostokąta znajdującego się na ekranie</p>
+			</div>
+			
+			<div id="figura">
+			<svg:svg width="500px" height="400px" version="1.1"
+			xmlns:svg="http://www.w3.org/2000/svg">
+			<!-- zielony prostokąt o czerwonym brzegu grubości 1 -->
+			<svg:rect width="200" height="50"
+			style="fill:rgb(0,255,0);stroke-width:1;
+			stroke:rgb(255,0,0)"/>			
+			<svg:text x="10" y="70">x=200</svg:text>
+			<svg:text x="205" y="20">y=50</svg:text>
+			</svg:svg>
+			</div>			
+			
+		<p class="normalny">Rozwiązanie</p>			
+		<div id="wzor">
+			<math xmlns="http://www.w3.org/1998/Math/MathML">
+			<mrow>			
+				<mi>P</mi>
+			<mo>=</mo>
+			<mi>a</mi>
+			
+			<mo>*</mo>
+			<mi>b</mi>
+			
+			</mrow>
+			</math>
+		
+		</div>	 
+	</div>
+	
+	
+</body>
+</html>
