@@ -6,11 +6,9 @@
 				PC
 			</nazwa>
 			<kod>
-				A1B2
+				A1B2D
 			</kod>
-			<cena>
-				1999
-			</cena>
+			<cena waluta="PLN">19.99</cena>
 			<ilosc>
 				15
 			</ilosc>	
@@ -24,12 +22,9 @@
 			<adres>
 				Gdańsk
 			</adres>
-			<telefon>
-				508555444
-			</telefon>
-			<nip>
-				1023456789
-			</nip>
+			<kodp>83-200</kodp>
+			<telefon>508555444</telefon>
+			<nip>1023456-91</nip>
 		</sklep>
 	</sklepy>
 </faktura>
