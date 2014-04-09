@@ -1,0 +1,26 @@
+<main>
+	<kaseta>
+	
+		<tytul>Milczenie Owiec</tytul>
+		<opis>Film na podstawie ksiazki o tym samym tytule</opis>
+		<cena>10</cena>
+		<id>1</id>
+		<rezyser>dobry</rezyser>
+		<rok>1997</rok>
+	</kaseta>
+		<kaseta>
+	
+		<tytul>Czerwony Smok</tytul>
+		<opis>Film na podstawie ksiazki o tym samym tytule</opis>
+		<cena>10</cena>
+		<id>2</id>
+		<rezyser>dobry</rezyser>
+		<rok>1997</rok>
+	</kaseta>
+	<wypozyczenia>
+		<dataw>2014-03-31</dataw>
+		<zwrot>brak</zwrot>
+		<ide>1</ide>
+	</wypozyczenia>
+</main>
+
