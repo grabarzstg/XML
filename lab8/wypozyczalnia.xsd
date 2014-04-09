@@ -35,24 +35,24 @@
 
 <xsd:element name="kaseta">
 <xsd:complexType>
-<xsd:sequence>
-<xsd:element name="tytul" type="xsd:string"/>
-<xsd:element name="opis" type="xsd:string"/>
-<xsd:element name="cena" type="xsd:integer"/>
-<xsd:element name="id" type="xsd:integer"/>
-<xsd:element name="rezyser" type="xsd:string"/>
-<xsd:element name="rok" type="xsd:integer"/>
-</xsd:sequence>
+	<xsd:sequence>
+		<xsd:element name="tytul" type="xsd:string"/>
+		<xsd:element name="opis" type="xsd:string"/>
+		<xsd:element name="cena" type="xsd:integer"/>
+		<xsd:element name="id" type="xsd:integer"/>
+		<xsd:element name="rezyser" type="xsd:string"/>
+		<xsd:element name="rok" type="xsd:integer"/>
+	</xsd:sequence>
 </xsd:complexType>
 </xsd:element>
 
 <xsd:element name="wypozyczenia">
 <xsd:complexType>
-<xsd:sequence>
-<xsd:element name="dataw" type="xsd:string"/>
-<xsd:element name="zwrot" type="xsd:string"/>
-<xsd:element name="ide" type="xsd:integer"/>
-</xsd:sequence>
+	<xsd:sequence>
+		<xsd:element name="dataw" type="xsd:string"/>
+		<xsd:element name="zwrot" type="xsd:string"/>
+		<xsd:element name="ide" type="xsd:integer"/>
+	</xsd:sequence>
 </xsd:complexType>
 </xsd:element>
 
