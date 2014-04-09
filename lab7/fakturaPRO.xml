@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<main>
+<faktura>
+	<produkty>
+		<produkt>
+			<nazwa>
+				PC
+			</nazwa>
+			<kod>
+				A1B2D
+			</kod>
+			<cena waluta="PLN">19.99</cena>
+			<ilosc>
+				15
+			</ilosc>	
+		</produkt>
+	</produkty>
+	<sklepy>
+		<sklep>
+			<nazwa>
+				MediaLuz
+			</nazwa>
+			<adres>
+				Gdańsk
+			</adres>
+			<kodp>83-200</kodp>
+			<telefon>623881901</telefon>
+			<nip>1023456-91</nip>
+		</sklep>
+	</sklepy>
+	<dostawca>
+		<nazwa>MediaLuz</nazwa>
+		<adres>
+			<ulica>Kosciuszki</ulica>
+			<kod>83-110</kod>
+			<miasto>Gdansk</miasto>
+		</adres>
+		<telefony>
+			<tel-kom>623881901</tel-kom>
+		</telefony>
+	</dostawca>
+	
+	<odbiorca>
+		<nazwa>MediaStg</nazwa>
+		<adres>
+			<ulica>Kosciuszki</ulica>
+			<kod>83-200</kod>
+			<miasto>Starogard</miasto>
+		</adres>
+		<telefony>
+			<tel-stac>585620561</tel-stac>
+		</telefony>
+	</odbiorca>
+	
+	
+</faktura>
+
+<paragon>
+	<produkty>
+		<produkt>
+			<nazwa>
+				PC
+			</nazwa>
+			<kod>
+				A1B2D
+			</kod>
+			<cena waluta="PLN">19.99</cena>
+			<ilosc>
+				15
+			</ilosc>	
+		</produkt>
+	</produkty>
+	<sklepy>
+		<sklep>
+			<nazwa>
+				MediaLuz
+			</nazwa>
+			<adres>
+				Gdańsk
+			</adres>
+			<kodp>83-200</kodp>
+			<telefon>623881901</telefon>
+			<nip>1023456-91</nip>
+		</sklep>
+	</sklepy>
+	
+</paragon>
+
+<fakturaPRO>
+	<produkty>
+		<produkt>
+			<nazwa>
+				PC
+			</nazwa>
+			<kod>
+				A1B2D
+			</kod>
+			<cena waluta="PLN">19.99</cena>
+			<ilosc>
+				15
+			</ilosc>	
+		</produkt>
+	</produkty>
+	<sklepy>
+		<sklep>
+			<nazwa>
+				MediaLuz
+			</nazwa>
+			<adres>
+				Gdańsk
+			</adres>
+			<kodp>83-200</kodp>
+			<telefon>623881901</telefon>
+			<nip>1023456-91</nip>
+		</sklep>
+	</sklepy>
+	<dostawca>
+		<nazwa>MediaLuz</nazwa>
+		<adres>
+			<ulica>Kosciuszki</ulica>
+			<kod>83-110</kod>
+			<miasto>Gdansk</miasto>
+		</adres>
+		<telefony>
+			<tel-kom>623881901</tel-kom>
+		</telefony>
+	</dostawca>
+	
+	<odbiorca>
+		<nazwa>MediaStg</nazwa>
+		<adres>
+			<ulica>Kosciuszki</ulica>
+			<kod>83-200</kod>
+			<miasto>Starogard</miasto>
+		</adres>
+		<telefony>
+			<tel-stac>585620561</tel-stac>
+		</telefony>
+	</odbiorca>
+	
+	
+</fakturaPRO>
+</main>
