@@ -1,0 +1,6 @@
+<!ELEMENT prace (praca*)>
+<!ELEMENT praca (nazwa_pr, adres_pr)>
+<!ATTLIST praca
+kod_pr ID #REQUIRED>
+<!ELEMENT nazwa_pr (#PCDATA)>
+<!ELEMENT adres_pr (#PCDATA)>

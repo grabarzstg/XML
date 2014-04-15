@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+<xsd:element name="ksiazka">
+<xsd:complexType>
+<xsd:sequence>
+	<xsd:element name="osoby" minOccurs="1" maxOccurs="1" >
+	<xsd:complexType>
+	<xsd:sequence>
+		<xsd:element ref="osoba"  minOccurs="1" maxOccurs="100"/>
+	</xsd:sequence>
+	</xsd:complexType>
+	</xsd:element>
+	
+	<xsd:element name="biblioteki" minOccurs="1" maxOccurs="1" >
+	<xsd:complexType>
+	<xsd:sequence>
+		<xsd:element ref="biblioteka"  minOccurs="1" maxOccurs="100"/>
+	</xsd:sequence>
+	</xsd:complexType>
+		
+	<xsd:key name="kluczBib">
+	<xsd:selector xpath="biblioteka"/>
+	<xsd:field xpath="@kod"/>
+	</xsd:key>
+	</xsd:element>
+	
+	<xsd:element name="prace" minOccurs="1" maxOccurs="1" >
+	<xsd:complexType>
+	<xsd:sequence>
+		<xsd:element ref="praca"  minOccurs="1" maxOccurs="100"/>
+	</xsd:sequence>
+	</xsd:complexType>
+	</xsd:element>
+		
+</xsd:sequence>
+</xsd:complexType>
+
+
+
+</xsd:element>
+
+	
+	<xsd:complexType name="osobastandard">
+	<xsd:sequence>
+		<xsd:element name="imie" type="imieT"/>
+		<xsd:element name="nazwisko" type="imieT"/>
+		<xsd:element ref="telefony"/>
+		<xsd:element ref="adres"/>
+		<xsd:element name="gg" type="xsd:integer" minOccurs="0"/>
+		<xsd:element name="daty" type="unia" minOccurs="0"/>
+		<xsd:element ref="status"/>
+	</xsd:sequence>
+	<xsd:attribute name="id" use="required"/>
+	<xsd:attribute name="kod_bib" use="required" type="xsd:IDREF"/>
+	<xsd:attribute name="kod_praca" use="optional"/>
+	<xsd:attribute name="plec" use="required" type="plecT"/>
+	</xsd:complexType>
+	
+
+	<xsd:element name="biblioteka" >
+	<xsd:complexType>
+	<xsd:sequence>
+		<xsd:element name="nazwa_bib" type="xsd:string"/>
+		<xsd:element name="adres_bib" type="xsd:string"/>
+	</xsd:sequence>
+	<xsd:attribute name="kod" use="required" type="xsd:ID"/>
+	</xsd:complexType>
+	</xsd:element>
+
+	<xsd:element name="praca" >
+	<xsd:complexType>
+	<xsd:sequence>
+		<xsd:element name="nazwa_pr" type="xsd:string"/>
+		<xsd:element name="adres_pr" type="xsd:string"/>
+	</xsd:sequence>
+	<xsd:attribute name="kod_pr" use="required"/>
+	</xsd:complexType>
+	</xsd:element>
+	
+	
+	<xsd:element name="osoba" >
+	<xsd:complexType>
+    <xsd:complexContent>
+      <xsd:extension base="osobastandard">
+		<xsd:sequence>
+		<xsd:element name="strona" type="stronaT" minOccurs="0"/>
+		<xsd:element name="email" type="emailT" minOccurs="0" maxOccurs="5"/>
+		</xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+	</xsd:complexType>
+	
+	</xsd:element>
+	
+	<xsd:element name="telefony" >
+	<xsd:complexType>
+		<xsd:choice>
+		<xsd:element name="tel_dom" type="telefonT" minOccurs="0"/>
+		<xsd:element name="tel_kom" type="telefonT" minOccurs="0"/>
+		<xsd:element name="tel_prac" type="telefonT" minOccurs="0"/>
+		</xsd:choice>
+	</xsd:complexType>
+	</xsd:element>
+	
+	<xsd:element name="adres" >
+	<xsd:complexType>
+		<xsd:sequence>
+			<xsd:element name="ulica" type="xsd:string"/>
+			<xsd:element name="numer" type="xsd:string"/>
+			<xsd:element name="miasto" type="xsd:string"/>
+			<xsd:element name="kodp" type="pocztowy"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	</xsd:element>
+	
+	<xsd:element name="status" >
+	<xsd:complexType>
+		<xsd:attribute name="tekst" use="required" type="statusT"/>
+	</xsd:complexType>
+	</xsd:element>
+
+
+	<xsd:simpleType name="statusT">
+		<xsd:restriction base="xsd:string">
+		<xsd:enumeration value="online"/>
+		<xsd:enumeration value="offline"/>
+		<xsd:enumeration value="brak"/>
+	</xsd:restriction>
+	</xsd:simpleType>
+	
+	<xsd:simpleType name="plecT">
+		<xsd:restriction base="xsd:string">
+		<xsd:enumeration value="m"/>
+		<xsd:enumeration value="k"/>
+		<xsd:enumeration value="brak"/>
+	</xsd:restriction>
+	</xsd:simpleType>
+
+    <xsd:simpleType name="imieT">
+    <xsd:restriction base="xsd:string">
+      <xsd:pattern value="([A-Z]([a-z]*))"/>
+	  <xsd:maxLength value="30"/>
+    </xsd:restriction>
+	</xsd:simpleType>
+	
+	<xsd:simpleType name="telefonT">
+    <xsd:restriction base="xsd:string">
+	  <xsd:pattern value="((\+[0-9][0-9]){0,1})([0-9]){9}"/>
+      <xsd:minLength value="9"/>
+      <xsd:maxLength value="12"/>
+    </xsd:restriction>
+	</xsd:simpleType>
+  
+    <xsd:simpleType name="pocztowy">
+    <xsd:restriction base="xsd:string">
+      <xsd:pattern value="[0-9][0-9]\-[0-9][0-9][0-9]"/>
+    </xsd:restriction>
+	</xsd:simpleType>
+  
+    <xsd:simpleType name="stronaT">
+    <xsd:restriction base="xsd:string">
+      <xsd:pattern value="(http://){1}([A-Za-z0-9]\.*)*"/>
+    </xsd:restriction>
+	</xsd:simpleType>
+	
+	<xsd:simpleType name="emailT">
+    <xsd:restriction base="xsd:string">
+      <xsd:pattern value="[0-9a-zA-Z]*@[0-9a-zA-Z]*(\.)[\.0-9a-zA-Z]*"/>
+    </xsd:restriction>
+	</xsd:simpleType>	
+	
+	<xsd:simpleType name="brakTyp">
+		<xsd:restriction base="xsd:string">
+		<xsd:enumeration value="brak"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	
+	<xsd:simpleType name="dataList">
+		<xsd:list itemType="xsd:date"/>
+	</xsd:simpleType>
+	
+	<xsd:simpleType name="unia">
+	<xsd:union memberTypes="dataList brakTyp"/>
+	</xsd:simpleType>
+	
+
+	
+</xsd:schema>

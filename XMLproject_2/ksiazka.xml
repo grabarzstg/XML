@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE ksiazka SYSTEM "ksiazka.dtd">
+<?xml-stylesheet type="text/css" href="style.css" ?>
+<ksiazka>
+<osoby>
+	
+	<osoba id="os1" kod_bib="bib5" plec='m' >
+		<imie>
+		Marek
+		</imie>
+		<nazwisko>
+		Grabowski
+		</nazwisko>
+		<telefon>
+		581111111
+		</telefon>
+		<adres>
+		Starogard
+		</adres>
+		<skype>
+		grabarz
+		</skype>
+		<strona>
+		czolgista.pl
+		</strona>
+		<email>
+		mgrabowski@inf.ug.edu.pl
+		</email>
+	</osoba>
+	<osoba id="os2" kod_bib="bib2" kod_praca="pr2" plec='m'>
+		<imie>
+		Adam
+		</imie>
+		<nazwisko>
+		Literski
+		</nazwisko>
+		<telefon>
+		508555999
+		</telefon>
+		<adres>
+		Starogard Swietojanska 12
+		</adres>
+	</osoba>
+	
+	<osoba id="os3" kod_bib="bib1" kod_praca="pr2" plec='k'>
+		<imie>
+		Katarzyna
+		</imie>
+		<nazwisko>
+		Stasiewicz
+		</nazwisko>
+		<telefon>
+		508555999
+		</telefon>
+		<adres>
+		Gdańsk do Studzienki 32
+		</adres>
+		<email>
+		kstasiewicz@mat.ug.edu.pl
+		</email>
+	</osoba>
+		
+</osoby>
+<biblioteki>
+<biblioteka kod="bib1">
+		<nazwa_bib>
+		Biblioteka Manhattan
+		</nazwa_bib>
+		<adres_bib>
+		Gdańsk, C.H. Manhattan 
+		</adres_bib>
+</biblioteka>
+
+<biblioteka kod="bib2">
+		<nazwa_bib>
+		Biblioteka Główna
+		</nazwa_bib>
+		<adres_bib>
+		Gdańsk, ul. Targ Rakowy 5/6
+		</adres_bib>
+</biblioteka>
+</biblioteki>
+
+<prace>
+<praca kod_pr="pr1">
+	<nazwa_pr>
+	Intel
+	</nazwa_pr>
+	<adres_pr>
+	Gdańsk
+	</adres_pr>
+</praca>
+
+<praca kod_pr="pr2">
+	<nazwa_pr>
+	PSS
+	</nazwa_pr>
+	<adres_pr>
+	Starogard Gdański
+	</adres_pr>
+</praca>
+
+<praca kod_pr="pr3">
+	<nazwa_pr>
+	SII
+	</nazwa_pr>
+	<adres_pr>
+	Gdańsk
+	</adres_pr>
+</praca>
+
+
+<praca kod_pr="pr4">
+	<nazwa_pr>
+	Jit Solutions
+	</nazwa_pr>
+	<adres_pr>
+	Gdańsk
+	</adres_pr>
+</praca>
+</prace>
+</ksiazka>
+

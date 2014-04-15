@@ -1,0 +1,24 @@
+<!ELEMENT ksiazka (osoby, biblioteki+, prace+ )>
+<!ELEMENT osoby (osoba+)>
+<!ELEMENT osoba (imie, nazwisko, telefon, adres, skype?, strona*, email*)>
+<!ATTLIST osoba
+id ID #REQUIRED
+kod_bib IDREF #REQUIRED
+kod_praca IDREF #IMPLIED
+kod_szkola IDREF #IMPLIED
+plec CDATA #REQUIRED >
+
+<!ELEMENT imie (#PCDATA)>
+<!ELEMENT nazwisko (#PCDATA)>
+<!ELEMENT telefon (#PCDATA)>
+<!ELEMENT adres (#PCDATA)>
+<!ELEMENT skype (#PCDATA)>
+<!ELEMENT strona (#PCDATA)>
+<!ELEMENT email (#PCDATA)>
+
+<!ENTITY % biblioteka SYSTEM "biblioteka.dtd">
+%biblioteka;
+
+<!ENTITY % praca SYSTEM "praca.dtd">
+%praca;
+

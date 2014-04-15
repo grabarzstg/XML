@@ -1,0 +1,316 @@
+@font-face
+{
+font-family: WP;
+src: url(SegoeWP.ttf);
+}
+
+ksiazka {
+background: #6E7E94;
+	padding:5px;
+	display:block;
+	clear: both;
+}
+osoby{
+counter-increment:os;
+background:green;
+display:block;
+margin-left:5%;
+margin-right:5%;
+
+}
+
+
+
+osoba{
+color:white;
+counter-increment:licznik;
+border: 2px solid #00D8CC;
+display:table;
+	width: 280px;
+	height: 230px;
+background:red;
+text-align:left;
+font-family:Calibri;
+margin-bottom:30px;
+float:left;
+margin-right: 10px;
+margin-top:10px;
+box-shadow: 3px 3px 3px #56C5FF;
+}
+
+biblioteki{
+display:block;
+margin-left:10%;
+margin-right:10%;
+margin-top: 35px;
+clear: both;
+}
+
+biblioteka[kod="bib1"]{
+counter-increment:bib;
+color: white;
+
+font-family:"Segoe UI";
+border: 2px solid #2E8DEF;
+box-shadow: 3px 3px 3px #2E8DEF;
+display:table;
+background:#0A5BC4;
+	width: 280px;
+	height: 100px;
+	text-align:left;
+	margin-bottom: 20px;
+	float:left;
+	margin-right:30px;
+}
+
+biblioteka[kod="bib2"]{
+counter-increment:bib;
+color: white;
+
+font-family:"Segoe UI";
+border: 2px solid #A700AE;
+box-shadow: 5px 5px 5px #A700AE;
+display:table;
+background:#8C0095;
+	width: 280px;
+	height: 100px;
+	text-align:left;
+	margin-bottom: 20px;
+	float:left;
+	margin-right:30px;
+}
+
+biblioteka[kod="bib1"]:hover{
+background:#2E8DEF;
+}
+
+biblioteka[kod="bib2"]:hover{
+background:#A700AE;
+}
+
+prace{
+display:block;
+margin-left:10%;
+margin-right:10%;
+margin-top: 35px;
+clear: both;
+}
+
+
+praca{
+counter-increment:pra;
+color: transparent;
+
+font-family:"WP";
+font-size:15px;
+border: 2px solid  #DC572E	;
+box-shadow: 3px 3px 3px #DC572E;
+display:table;
+background: #D24726;
+	width: 122px;
+	height: 122px;
+	text-align:left;
+	margin-bottom: 20px;
+	float:left;
+	margin-right:30px;
+	
+	transition:width 2s, height 2s,;
+
+	
+}
+
+praca:hover{
+background:#DC572E;
+height:280px;
+width: 280px;
+color: white;
+font-size:20px;
+}
+
+praca[kod_pr="pr1"]:before { content: "Intel";
+font-weight:bold;
+text-align:center;
+color: white;
+}
+
+praca[kod_pr="pr2"]:before { content: "PSS";
+font-weight:bold;
+text-align:center;
+color: white;
+}
+praca[kod_pr="pr3"]:before { content: "SII";
+font-weight:bold;
+text-align:center;
+color: white;
+}
+
+praca[kod_pr="pr4"]:before { content: "Jit Solutions";
+font-weight:bold;
+text-align:center;
+color: white;
+}
+
+
+
+
+
+osoba[plec='m']
+{
+background:url(male.png) 0 0;
+background-repeat:no-repeat;
+background-position:right top;
+}
+
+osoba[plec='k']
+{
+background:url(female.png) 0 0;
+background-repeat:no-repeat;
+background-position:right top;
+}
+
+
+imie{
+display:block;
+padding: 5px;
+}
+
+nazwisko{
+display:block;
+padding: 5px;
+}
+
+skype{
+display:block;
+padding: 5px;
+}
+
+adres{
+display:block;
+padding: 5px;
+}
+
+telefon{
+display:block;
+padding: 5px;
+}
+
+strona{
+display:block;
+padding: 5px;
+}
+
+email{
+display:block;
+padding: 5px;
+}
+
+
+
+imie:before { content: "Imię:    "; 
+font-size:15;
+font-style:italic; 
+text-shadow: 2px 2px black;
+text-align: right;} 
+
+telefon:before { content: "Tel:    "; 
+font-size:15;
+text-shadow: 2px 2px black;
+font-style:italic;} 
+
+adres:before { content: "Adres:    "; 
+font-size:15;
+text-shadow: 2px 2px black;
+font-style:italic;} 
+
+strona:before { content: "WWW:    "; 
+font-size:15;
+text-shadow: 2px 2px black;
+font-style:italic;} 
+
+email:before { content: "E-mail:    "; 
+font-size:15;
+text-shadow: 2px 2px black;
+font-style:italic;} 
+
+nazwisko:before { content: "Nazwisko:"; 
+font-size:15;
+text-shadow: 2px 2px black;
+font-style:italic;}
+
+skype:before { content: "Skype:  "; 
+font-size:15;
+text-shadow: 2px 2px black;
+font-style:italic;}
+
+
+
+nazwa_bib:before { content: "Nazwa:";
+text-shadow: 1px 1px white;
+}
+adres_bib:before { content: "Lokalizacja:";
+text-shadow: 1px 1px white;
+}
+
+nazwa_bib{
+display: block;
+padding:5px;
+}
+
+adres_bib{
+display: block;
+padding:5px;
+}
+
+
+nazwa_pr:before { content: "Nazwa:";
+font-weight:bold;
+}
+adres_pr:before { content: "Lokalizacja:";
+font-weight:bold;
+}
+
+nazwa_pr{
+display: block;
+padding:5px;
+}
+
+adres_pr{
+display: block;
+padding:5px;
+}
+
+
+
+osoba[kod_bib="bib1"]:before{
+counter-reset:none;
+content:counter(licznik) ' -  1' ;
+text-shadow: 2px 2px black;
+}
+
+osoba[kod_bib="bib1"]{
+border: 2px solid #2E8DEF;
+box-shadow: 5px 5px 5px #2E8DEF;
+}
+
+osoba[kod_bib="bib2"]:before{
+counter-reset:none;
+content:counter(licznik) ' -  2' ;
+text-shadow: 2px 2px black;
+}
+
+
+osoba[kod_bib="bib2"]{
+border: 2px solid #094AB2;
+box-shadow: 5px 5px 5px #094AB2;
+}
+
+
+
+
+
+
+
+
+
+
+
