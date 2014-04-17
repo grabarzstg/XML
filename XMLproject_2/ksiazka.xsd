@@ -18,12 +18,11 @@
 		<xsd:element ref="biblioteka"  minOccurs="1" maxOccurs="100"/>
 	</xsd:sequence>
 	</xsd:complexType>
-		
-	<xsd:key name="kluczBib">
-	<xsd:selector xpath="biblioteka"/>
-	<xsd:field xpath="@kod"/>
-	</xsd:key>
-	</xsd:element>
+		</xsd:element>	
+
+	
+
+	
 	
 	<xsd:element name="prace" minOccurs="1" maxOccurs="1" >
 	<xsd:complexType>
@@ -36,7 +35,16 @@
 </xsd:sequence>
 </xsd:complexType>
 
+	<xsd:key name="kluczBib">
+	<xsd:selector xpath="biblioteki/biblioteka"/>
+	<xsd:field xpath="@kod"/>
+	</xsd:key>
 
+
+	<xsd:keyref name="idBib" refer="kluczBib">
+	<xsd:selector xpath="osoby/osoba"/>
+	<xsd:field xpath="@kod_bib"/>
+	</xsd:keyref>
 
 </xsd:element>
 
@@ -52,11 +60,12 @@
 		<xsd:element ref="status"/>
 	</xsd:sequence>
 	<xsd:attribute name="id" use="required"/>
-	<xsd:attribute name="kod_bib" use="required" type="xsd:IDREF"/>
+	<xsd:attribute name="kod_bib" use="required" type="xsd:string"/>
 	<xsd:attribute name="kod_praca" use="optional"/>
 	<xsd:attribute name="plec" use="required" type="plecT"/>
 	</xsd:complexType>
 	
+
 
 	<xsd:element name="biblioteka" >
 	<xsd:complexType>
@@ -64,8 +73,8 @@
 		<xsd:element name="nazwa_bib" type="xsd:string"/>
 		<xsd:element name="adres_bib" type="xsd:string"/>
 	</xsd:sequence>
-	<xsd:attribute name="kod" use="required" type="xsd:ID"/>
-	</xsd:complexType>
+	<xsd:attribute name="kod" use="required" type="xsd:string"/>
+	</xsd:complexType>		
 	</xsd:element>
 
 	<xsd:element name="praca" >
