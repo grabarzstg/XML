@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE ksiazka SYSTEM "ksiazka.dtd">
+<?xml-stylesheet type="text/css" href="style.css" ?>
+<ksiazka>
+<osoby>
+	
+	<osoba id="os1" kod_bib="B1" plec='m' >
+		<imie>Marek</imie>
+		<nazwisko>Grabowski</nazwisko>
+		<telefony><tel_kom>581111111</tel_kom></telefony>
+		<adres>
+			<ulica>Stolarska</ulica>
+			<numer>14</numer>
+			<miasto>Starogard Gdański</miasto>
+			<kodp>83-200</kodp>
+		</adres>
+		<gg>6575702</gg>
+		<daty>brak</daty>
+		<status tekst="online"/>
+		<email>mgrabowski@ug.edu.pl</email>
+	</osoba>
+	<osoba id="os2" kod_bib="B2" kod_praca="P2" plec='m'>
+		<imie>Adam</imie>
+		<nazwisko>Literski</nazwisko>
+		<telefony><tel_prac>508555999</tel_prac></telefony>
+		<adres>
+			<ulica>Swietojanska</ulica>
+			<numer>23</numer>
+			<miasto>Starogard Gdański</miasto>
+			<kodp>83-200</kodp>
+		</adres>
+		<daty>2012-03-12 2012-03-12</daty>
+		<status tekst="offline"/>
+		<strona>http://slimak.pl</strona>
+	</osoba>
+	
+	<osoba id="os3" kod_bib="B1" kod_praca="P2" plec='k'>
+		<imie>Katarzyna</imie>
+		<nazwisko>Stasiewicz</nazwisko>
+		<telefony><tel_dom>508557899</tel_dom></telefony>
+		<adres>
+			<ulica>Kościuszki</ulica>
+			<numer>40</numer>
+			<miasto>Starogard Gdański</miasto>
+			<kodp>83-200</kodp>
+		</adres>
+		<status tekst="online"/>		
+		<email>kstasiewicz112@o2.pl</email>
+		<email>kstasiewicz@mat.ug.edu.pl</email>
+	</osoba>
+		
+</osoby>
+<biblioteki>
+<biblioteka kod="B1">
+		<nazwa_bib>
+		Biblioteka Manhattan
+		</nazwa_bib>
+		<adres_bib>
+		Gdańsk, C.H. Manhattan 
+		</adres_bib>
+</biblioteka>
+
+<biblioteka kod="B2">
+		<nazwa_bib>
+		Biblioteka Główna
+		</nazwa_bib>
+		<adres_bib>
+		Gdańsk, ul. Targ Rakowy 5/6
+		</adres_bib>
+</biblioteka>
+</biblioteki>
+
+<prace>
+<praca kod_pr="P1">
+	<nazwa_pr>
+	Intel
+	</nazwa_pr>
+	<adres_pr>
+	Gdańsk
+	</adres_pr>
+</praca>
+
+<praca kod_pr="P2">
+	<nazwa_pr>
+	PSS
+	</nazwa_pr>
+	<adres_pr>
+	Starogard Gdański
+	</adres_pr>
+</praca>
+
+<praca kod_pr="P3">
+	<nazwa_pr>
+	SII
+	</nazwa_pr>
+	<adres_pr>
+	Gdańsk
+	</adres_pr>
+</praca>
+
+
+<praca kod_pr="P4">
+	<nazwa_pr>
+	Jit Solutions
+	</nazwa_pr>
+	<adres_pr>
+	Gdańsk
+	</adres_pr>
+</praca>
+</prace>
+</ksiazka>
+
