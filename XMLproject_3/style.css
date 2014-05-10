@@ -1,0 +1,16 @@
+body {
+background: #00A0B1;
+	padding:5px;
+	display:block;
+	clear: both;
+}
+
+div#w3c{
+	padding:10px;
+	float:left;
+	background: #00A600;
+}
+
+a#w3 { color: white;
+	text-decoration: none; 
+	}

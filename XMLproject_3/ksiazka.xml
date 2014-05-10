@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE ksiazka SYSTEM "ksiazka.dtd">
 <?xml-stylesheet type="text/css" href="style.css" ?>
 <ksiazka>
 <osoby>
 	
-	<osoba id="os1" kod_bib="B1" plec='m' >
+	<osoba id="os1" kod_bib="B1" plec='m' kod_praca="P1" >
 		<imie>Marek</imie>
 		<nazwisko>Grabowski</nazwisko>
 		<telefony><tel_kom>581111111</tel_kom></telefony>
