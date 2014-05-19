@@ -13,7 +13,7 @@
 			<miasto>Starogard Gdański</miasto>
 			<kodp>83-200</kodp>
 		</adres>
-		<gg>6575702</gg>
+		<gg>857570200</gg>
 		<daty>brak</daty>
 		<status tekst="online"/>
 		<email>mgrabowski@ug.edu.pl</email>
@@ -28,9 +28,11 @@
 			<miasto>Starogard Gdański</miasto>
 			<kodp>83-200</kodp>
 		</adres>
+		<gg>657570200</gg>
 		<daty>2012-03-12 2012-03-12</daty>
 		<status tekst="offline"/>
 		<strona>http://slimak.pl</strona>
+		<email>adamo23123@gmail.com</email>
 	</osoba>
 	
 	<osoba id="os3" kod_bib="B1" kod_praca="P2" plec='k'>
@@ -46,6 +48,20 @@
 		<status tekst="online"/>		
 		<email>kstasiewicz112@o2.pl</email>
 		<email>kstasiewicz@mat.ug.edu.pl</email>
+	</osoba>
+	
+		<osoba id="os4" kod_bib="B2" kod_praca="P2" plec='k'>
+		<imie>Karolina</imie>
+		<nazwisko>Kmak</nazwisko>
+		<telefony><tel_dom>500557830</tel_dom></telefony>
+		<adres>
+			<ulica>Sobieskiego</ulica>
+			<numer>10</numer>
+			<miasto>Sopot</miasto>
+			<kodp>80-200</kodp>
+		</adres>
+		<status tekst="online"/>		
+		<email>karo123@gmail.com</email>
 	</osoba>
 		
 </osoby>
@@ -101,6 +117,15 @@
 <praca kod_pr="P4">
 	<nazwa_pr>
 	Jit Solutions
+	</nazwa_pr>
+	<adres_pr>
+	Gdańsk
+	</adres_pr>
+</praca>
+
+<praca kod_pr="P5">
+	<nazwa_pr>
+	TEST
 	</nazwa_pr>
 	<adres_pr>
 	Gdańsk

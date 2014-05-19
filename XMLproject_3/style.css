@@ -3,6 +3,7 @@ background: #00A0B1;
 	padding:5px;
 	display:block;
 	clear: both;
+	counter-reset:licznik;
 }
 
 div#w3c{
@@ -11,6 +12,38 @@ div#w3c{
 	background: #00A600;
 }
 
-a#w3 { color: white;
+div#nag {
+	font-size:20px;
+	}
+
+a { color: white;
 	text-decoration: none; 
 	}
+	
+table {
+color: white;
+background: #00D8CC;
+}
+
+table[name="druga"] {
+color: white;
+border: 2px solid black;
+}
+
+table[name="trzecia"] {
+color: white;
+border: 2px solid black;
+}
+
+td {
+width: 160px;
+}
+
+tr: before{
+
+}
+
+tr{
+counter-increment:licznik;
+background:#0A5BC4;
+}
